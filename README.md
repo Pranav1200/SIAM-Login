@@ -1,6 +1,6 @@
 # SIAM-Login
 
-You are required to develop a portal for SIAM VIT, which will be a basic CRUD application. This portal
+We are required to develop a portal for SIAM VIT, which will be a basic CRUD application. This portal
 will contain all the information about the core and board members of SIAM VIT. Please refer to the
 guidelines mentioned below and build it accordingly.
 Portal features:
