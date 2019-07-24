@@ -1,0 +1,107 @@
+
+body
+{   
+    background:url("https://wallpaper-gallery.net/images/wallpaper-math/wallpaper-math-4.png");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    font-color:#2ce350;
+    font-size: 15px;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.rside
+{
+    margin-right: 5%;
+    max-height: 200px;
+   
+    
+
+
+}
+
+/*http://www.vit.ac.in/files/ICAMS2k17/images/siam1.png
+*/
+.container
+{   padding: 3% 1%;
+    opacity: 0.85;
+    max-height:auto;
+    max-width: 500px;
+    margin-left: 4%;
+   /* background: #f8f9fa;*/
+   /* box-shadow: 2px 2px 6px #ffffffb8;*/
+    color:white;
+}
+
+.container:hover
+{
+    padding: 3% 1%;
+    opacity: 0.6;
+    max-height:auto;
+    max-width: 500px;
+    margin-left: 4%;
+    background: #000000;
+    box-shadow: 2px 2px 6px #000000b8;
+    color:white;
+    border-radius: 20px;
+}
+
+/*.btn-primary:hover
+{
+   background-color:lightgray;
+   color:black;
+}*/
+.button {
+ text-decoration: none;
+ color: rgba(255, 255, 255, 0.8);
+ background: black;
+ padding: 10px 15px;
+ border-radius: 20px;
+ font-weight: 500;
+ text-transform: uppercase;
+ transition: all 0.2s ease-in-out;
+}
+.glow-button:hover {
+ color: rgba(255, 255, 255, 1);
+ box-shadow: 0 5px 15px rgba(255,255,255,0.5);
+}
+
+.navbar
+{
+    padding: 0.5rem 0.8rem;
+}
+
+/*#navbarTogglerDemo02.collapse .navbar-collapse 
+{
+    color:green;
+}*/
+
+.navbar-right.logo img
+{
+    height: 2%
+
+    min-height: 10px;
+
+    max-width:200px;
+
+}
+
+/*.form-row input
+{
+    height:50%;
+
+    background-color: white;
+    border: 3px solid #87e1cb;
+    outline:none;
+}
+*/
+.form-control:focus,.custom-file:focus 
+{
+  border-color: #000000;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 255, 100, 0.6);
+}

@@ -1,0 +1,11 @@
+body{
+    background-image:url("https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg"); 
+    border: 8px dotted wheat;
+}
+.jumbotron {
+    background: none
+}
+
+.card{
+    margin:5px 3px;
+}

@@ -1,0 +1,26 @@
+/* CSS used here will be applied after bootstrap.css */
+body {
+  background-color:#2c3e50;
+  color:#2c3e50;
+}
+/* #eaeaea */
+img.avatar {
+  border: 1px solid #eee;
+}
+
+.only-bottom-margin {
+  margin-top: 0px;
+}
+
+.activity-mini {
+  padding-right: 15px;
+  float: left;
+}
+
+#box{
+    background-color:#eee;
+    padding:4%;
+    margin:2%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px #000000c8;
+}

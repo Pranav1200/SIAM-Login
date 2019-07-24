@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= mem.name%></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/showpage.css">
+</head>
+
+<body>
+
+
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <!-- <div class="panel panel-default">
+                    <div class="panel-body"> -->
+                        <div class="row">
+                            <div class="col-md-12">User profile
+                                <p> </p><p> </p>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row" id="box">
+                            <div class="col-md-4 text-center">
+                                <img class="img-circle avatar avatar-original" style="-webkit-user-select:none; 
+                  display:block; margin:auto;" src="http://robohash.org/sitsequiquia.png?size=120x120">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h1 class="only-bottom-margin"> <%= mem.name%></h1>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <span class="text-muted">Username:    </span><%= mem.username%><br>
+                                        <span class="text-muted">Email:       </span><%= mem.email%><br>
+                                        <span class="text-muted"><%= mem.member%></span> <br><br>
+                                        <span class="text-muted">Team:</span><br>
+                                        <small class="text-muted">Contact : <%= mem.mobile%></small>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <hr><a href="/member/<%= mem._id%>/edit" class="btn btn-success pull-right btn-lg" style="margin:4px;""><i class="glyphicon glyphicon-pencil"></i> Edit</a>
+                                    <form action="/member/<%= mem._id%>?_method=DELETE" method="POST">
+                    
+                                        <button class=" btn btn-danger pull-right btn-lg " style="margin:4px;"><i class="glyphicon glyphicon-trash"></i> Delete</button>
+                                   </form>
+                                   </div>
+                            </div>
+                        </div>
+                    <!-- </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+</body>

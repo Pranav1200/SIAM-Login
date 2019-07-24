@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+ 
+<!-- Include the plugin's CSS and JS: -->
+<script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+<link rel="stylesheet" href="css/bootstrap-multiselect.css" type="text/css">
+
+	<link rel="stylesheet" type="text/css" href="/app.css">
+</head>
+
+
+
+
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark " >
+  <a class="navbar navbar-right logo" href="#"><img src="https://www.siamvit.com/assets/images/logo-light.png"></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+    <ul class="nav navbar-nav navbar-right navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="https://www.siamvit.com/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.siamvit.com/#events">About</a>
+      </li>
+
+       <li class="nav-item">
+        <a class="nav-link" href="https://www.siamvit.com/#events">Events</a>
+      </li>
+
+       <li class="nav-item">
+        <a class="nav-link" href="https://www.siamvit.com/#siamcalendar">Siam Calendar</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="https://www.siamvit.com/#blog">Blog</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="https://www.siamvit.com/#team">Team</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="https://www.siamvit.com/#followus">Folllow Us</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="https://www.siamvit.com/#contact">Contact</a>
+      </li>
+
+    </ul>
+<!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul> -->
+
+   <!--  <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>-->
+  </div>   
+</nav>
+
+
+
+
+
+
+<div class="row">
+<div class="container col-xl-4 col-lg-5 col-md-6 col-sm-6 col-xs-8">
+
+<form action="/member" enctype="multipart/form-data" method="POST">
+  <div class="form-row">
+  	<div class="form-group col-md-6">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" placeholder=" Name"  name="name"required>
+  </div>
+
+  <div class="form-group col-md-5">
+    <label for="uname">Username</label>
+    <input type="text" class="form-control" id="uname" placeholder=" Username" name="username" required>
+  </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-5">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" placeholder=" Email" name="email"required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password" placeholder=" Password" pattern=".{5,10}" title="Password Length: 5-10 Characters" name="password" required>
+    </div>
+  </div>
+  
+
+  
+  <div class="form-row">
+    <div class="form-group col-md-8">
+      <label for="mob">Mobile Number</label>
+      <div class="input-group mb-3">
+     <div class="input-group-prepend">
+      <span class="input-group-text">+91</span>
+    </div>
+    <input type="text" class="form-control" placeholder="Mob No." name="mobile" required>
+  </div>
+</div>
+</div>
+
+<div class="form-row">
+<div class="form-group col-md-4">  
+<select id="example-getting-started" name="team" multiple="multiple">
+    <option value="cheese">Cheese</option>
+    <option value="tomatoes">Tomatoes</option>
+    <option value="mozarella">Mozzarella</option>
+    <option value="mushrooms">Mushrooms</option>
+    <option value="pepperoni">Pepperoni</option>
+    <option value="onions">Onions</option>
+</select>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#example-getting-started').multiselect();
+    });
+</script>
+</div>
+
+<div class="form-group col-md-8">
+	<label for="coremember">Core Member </label>
+	<input type="radio" name="member" id="coremember" value="Core Committee">
+	<label for="boardmember">Board Member</label>
+	<input type="radio" name="member" id="boardmember" value="Board Member">
+</div>
+
+<div class="input-group mb-3" style="width:300px;">
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" name="image">
+    <label class="custom-file-label" for="inputGroupFile01">Upload Profile Pic</label>
+  </div>
+</div>
+</div>
+  <button type="submit" class="button glow-button" >Sign Up</button>
+</form>
+</div>
+
+<!-- <div class="col-xl-5 col-lg-4 col-md-6 col-sm-5 col-xs-2 rside">
+	
+</div> -->
+</div>
+
+
+
+<!-- form>
+	<div>
+		<label for="name">Name </label>
+		<input type="text" name="name" id="name" placeholder=" Name" required>
+	</div>
+	<div>
+		<label for="user">Username </label>
+		<input type="text" name="uname" id="user" placeholder=" Username" required>
+	</div>
+	<div>
+	<label for="password">Password </label>
+	<input type="password" name="pass" id="password" placeholder=" Password" patteren=".{5,10}" title="Password Length 5 - 10 Characters" required>	
+	</div>
+	<div>
+		<label for="email">Email </label>
+		<input type="email" name="email" id="email" placeholder=" Email" required>
+	</div>
+	<div>
+		<label for="Mobile">Mobile
+		</label>
+		<input type="text" name="Mobile" name="mob" placeholder=" Mobile" pattern="[56789][0-9]{9}" title="Invalid Mob. No." required>
+	</div>
+	<div>
+		<label for="team">Team </label>
+		<button type="button" class="multiselect dropdown-toggle btn-block text-left btn btn-default" data-toggle="dropdown" title="None selected" aria-expanded="true"><span class="multiselect-selected-text">None selected</span> <b class="caret"></b>
+		<span class="multiselect-selected-text">None selected</span>
+		<b class="caret"></b></button>
+		<li class="multiselect-item multiselect-all"><a tabindex="0" class="multiselect-all"><label class="checkbox"><input type="checkbox" value="multiselect-all">  Select all</label></a></li>
+		<li>
+			<label class="checkbox">
+				<input type="checkbox" name="team">Reasearch</label>
+		</li>
+		</div>
+
+	
+</form>
+ -->
+
+</div>
+
+<script type="text/javascript" src="mltiSlct.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
